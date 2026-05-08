@@ -1,4 +1,3 @@
-git init
 /* Reset */
 * {
   margin: 0;
@@ -69,31 +68,10 @@ body {
   width: 100%;
 }
 
-
-.logo {
-  font-size: 25px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.navbar a {
-  font-size: 20px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 30px;
-  transition: .3s;
-}
-
-.navbar a:hover {
-  color: #0ef;
-}
-
 /* Home Section */
 .home {
   height: 100vh;
-  background: url("purple/illustrated/Mountain/Desktop/wallpaper.png") no-repeat center center/cover;
+  background: url("assets/images/wallpaper.png") no-repeat center center/cover;
   display: flex;
   align-items: center;
   padding: 70px 100px 0;
@@ -102,6 +80,13 @@ body {
 .home-content h1 {
   font-size: 56px;
   font-weight: 700;
+}
+
+/* Social Icons */
+.home-sci {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .home-sci a {
@@ -126,12 +111,6 @@ body {
   transform: scale(1.1);
 }
 
-.home-sci a:hover {
-  background: #0ef;
-  color: #081b29;
-  box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
-}
-
 /* Box Layout for Projects, Skills, Education, Work */
 .services-list {
   display: grid;
@@ -147,4 +126,21 @@ body {
   border: 2px solid #0ef;
   text-align: center;
   transition: 0.4s ease;
-  box-shadow: 0 0 10px #012290f7, 0}
+  box-shadow: 0 0 10px #012290f7, 0 0 20px #0053b8f7;
+}
+
+.services-list .box h2 {
+  font-size: 22px;
+  color: #0ef;
+  margin-bottom: 10px;
+}
+
+.services-list .box p {
+  font-size: 15px;
+  color: #ededed;
+}
+
+.services-list .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px cyan, 0 0 30px cyan;
+}
